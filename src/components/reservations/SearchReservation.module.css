@@ -1,0 +1,106 @@
+.search_reservations_section {
+    padding: 150px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_reservations_container {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.search_reservations_container p {
+    color: #8C8C8C;
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 59.8px;
+}
+
+.search_reservations_form {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.search_reservations_form span {
+    position: absolute;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 300;
+    background: #FF746C;
+    color: #FFF;
+    border-radius: 100px;
+}
+
+.search_reservations_form input[type="text"] {
+    border: 1px solid #DFDFDF;
+    border-radius: 100px;
+    background: #FFF;
+    color: #222;
+    padding: 30px 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    max-height: 75px;
+}
+
+.search_reservations_form input[type="submit"] {
+    border: none;
+    border-radius: 100px;
+    background: #FF5301;
+    color: #FFF;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    max-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .search_reservations_section {
+        padding: 75px 16px;
+    }
+
+    .search_reservations_container p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .search_reservations_form {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .search_reservations_form input[type="text"] {
+        padding: 20px 24px;
+        font-size: 16px;
+        line-height: 20.8px;
+        max-height: 51px;
+    }
+
+    .search_reservations_form input[type="submit"] {
+        padding: 14px 30px;
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%;
+    }
+}

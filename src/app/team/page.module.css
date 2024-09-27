@@ -1,9 +1,9 @@
-.main {
+.team {
     margin-top: 175px;
 }
 
 @media (max-width: 768px) {
-    .main {
+    .team {
         margin-top: 75px;
     }
 }
