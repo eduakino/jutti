@@ -9,7 +9,6 @@ import hamburger from "../../public/assets/icon_hamburger_menu.svg"
 import close from "../../public/assets/icon_close.svg"
 import { useState } from "react";
 
-
 export default function Header() {
 
     const [open, setOpen] = useState(false);
