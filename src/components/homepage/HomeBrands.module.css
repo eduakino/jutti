@@ -12,12 +12,11 @@
     align-items: center;
     justify-content: center;
     gap: 150px;
-    padding: 150px 0;
 }
 
 .home_brands_title {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1000px;
     text-align: center;
     display: flex;
     align-items: center;

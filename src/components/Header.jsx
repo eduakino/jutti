@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "@/components/Header.module.css";
 import whatsappIcon from "../../public/assets/logo_whatsapp.svg";
+import whatsappIconW from "../../public/assets/wa_icon_white.svg";
 import mainLogo from "../../public/assets/Jutti_logo.svg";
 
 import hamburger from "../../public/assets/icon_hamburger_menu.svg"
@@ -45,16 +46,33 @@ export default function Header() {
                 </button>
             </div>
             <section className={styles.mobile_menu} style={{display: open ? 'flex' : 'none'}}>
-                <button className={styles.close_icon} onClick={closeMenu}>
-                    <Image src={close} />
-                </button>
-
+                <div className={styles.mm_header}>
+                    <Image src={mainLogo} alt="Jutti logo" className={styles.brand_logo}  />
+                    <button className={styles.close_icon} onClick={closeMenu}>
+                        <Image src={close} className={styles.close_icon_i} width={16} />
+                    </button>
+                </div>
+    
                 <nav className={styles.main_header_navigation_mobile}>
-                    <a href="/" className="bodyMedium">Descubre</a>
-                    <a href="/blogs" className="bodyMedium">Blog</a>
-                    <a href="/quote" className="bodyMedium">Cotiza</a>
-                    <a href="/reservations" className="bodyMedium">Reservas</a>
+                    <a href="/" className="semibold">Descubre</a>
+                    <div className={styles.divider} />
+                    <a href="/blogs" className="semibold">Blog</a>
+                    <div className={styles.divider} />
+                    <a href="/quote" className="semibold">Cotiza</a>
+                    <div className={styles.divider} />
+                    <a href="/reservations" className="semibold">Reservas</a>
+                    <div className={styles.divider} />
+                    <a href="/team" className="semibold">Equipo</a>
+                    <div className={styles.divider} />
+                    <a href="/" className="semibold">Términos y Condiciones</a>
                 </nav>
+
+                <div className={styles.wa_container}>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=50377938349" className={styles.wa_btn}>
+                        <Image src={whatsappIconW} className={styles.wa_icon_w} alt="Whatsapp logo" />
+                        <span>Whatsapp</span>
+                    </a>
+                </div>
             </section>
         </header>
     )

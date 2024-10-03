@@ -14,7 +14,7 @@ export default function Blogs() {
 
     return(
         <main className={styles.blogs_main}>
-            <section className={styles.blogs_title_section}>
+            <section className={`${styles.blogs_title_section} max-width`}>
                 <article className={styles.blogs_title}>
                     <h1>Pensamientos, historias e ideas</h1>
                     <p>Bienvenido al blog de Jutti</p>

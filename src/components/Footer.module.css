@@ -3,18 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #F7F7F7;
+    border-top: 1px solid #DFDFDF;
 }
 
 .main_footer_container {
     width: 100%;
-    max-width: 1920px;
-    padding: 80px 100px 150px 100px;
-    border-top: 1px solid #DFDFDF;
+    max-width: 1440px;
+    padding: 80px 50px 120px 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: #F7F7F7;
 }
 
 .main_footer_links {

@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function FAQ() {
     return(
         <section className={styles.faq_section}>
-            <article className={styles.faq_container}>
+            <article className={`${styles.faq_container} max-width padding`}>
                 <h1>Preguntas Frecuentes</h1>
                 <div className={styles.faq_accordion}>
                     <details>

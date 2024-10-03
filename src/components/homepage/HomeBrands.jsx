@@ -18,7 +18,7 @@ import styles from "@/components/homepage/HomeBrands.module.css"
 export default function HomeBrands() {
     return(
         <section className={styles.home_brands}>
-            <article className={styles.home_brands_container}>
+            <article className={`${styles.home_brands_container} padding`}>
                 <div className={styles.home_brands_title}>
                     <h1>Seleccionamos los mejores precios</h1>
                 </div>

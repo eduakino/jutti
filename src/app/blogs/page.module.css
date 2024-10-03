@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 175px;
+    padding-top: 100px;
 }
 
 .blogs_title_section {
@@ -17,7 +17,6 @@
 
 .blogs_title {
     width: 100%;
-    max-width: 1140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,9 +27,9 @@
 }
 
 .blogs_title p {
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 300;
-    line-height: 52px;
+    line-height: 33.8px;
     color: #767676;
 }
 
@@ -53,14 +52,14 @@
 .blog_tabs__radio { display: none; }
 
 .blog_tabs__label {
-    padding: 14px 30px;
+    padding: 14px 24px;
     border: 1px solid #d2d2d2;
     border-radius: 100px;
     background: #FFF;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: #222;
-    line-height: 36px;
+    line-height: 30px;
     margin-right: 20px;
     cursor: pointer;
 }

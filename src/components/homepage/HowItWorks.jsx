@@ -17,7 +17,7 @@ export default function HowItWorks() {
 
     return(
         <section className={styles.howItWorks}>
-            <article className={styles.howItWorks_container}>
+            <article className={`${styles.howItWorks_container} max-width padding`}>
                 <h1>¿Cómo funciona?</h1>
                 <div className={styles.howItWorks_cards}>
                     <div className={styles.howItWorks_first_cards}>
@@ -26,7 +26,7 @@ export default function HowItWorks() {
                         </div>
                         <div>
                             <h2>Recibe pdf de tu cotización</h2>
-                            <Image src={recipe} className={styles.recipe_photo} />
+                            <Image src={recipe} className={styles.recipe_photo} alt={'Recipe Image'} />
                         </div>
                     </div>
 
@@ -40,7 +40,7 @@ export default function HowItWorks() {
                     ) : (
                     <div className={styles.howItWorks_last_cards}>
                         <h2>Guía y asistencia total de tu viaje</h2>
-                        <Image style={{width: '100%'}} src={keyboard} className={styles.howItWorks_last_cards_photo} />
+                        <Image style={{width: '100%'}} src={keyboard} className={styles.howItWorks_last_cards_photo} alt={'Keyboard Image'} />
                         <button onClick={() => displayInfoHandlerOn()} ><Image src={plusIcon} /></button>
                     </div>
                     )}

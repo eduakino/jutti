@@ -10,13 +10,11 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    padding: 150px 0;
 }
 
 .home_cta_card {
     width: 100%;
-    max-width: 1140px;
-    max-height: 550px;
+    max-height: 450px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -27,20 +25,20 @@
 .cta_img_container {
     width: 100%;
     max-width: 399px;
-    height: 550px;
+    height: 450px;
 }
 
 .cta_img {
     width: 100%;
     max-width: 399px;
     object-fit: cover;
-    height: 550px;
+    height: 450px;
 }
 
 .cta_content {
     width: 100%;
     max-width: 741px;
-    padding: 80px;
+    padding: 50px 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -48,10 +46,10 @@
 }
 
 .cta_content p {
-    color: #222;
-    font-size: 24px;
+    color: #767676;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 30px;
 }
 
 .cta_content a {

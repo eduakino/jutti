@@ -18,7 +18,7 @@ export default function SearchReservation() {
 
     return(
         <section className={styles.search_reservations_section}>
-            <article className={styles.search_reservations_container}>
+            <article className={`${styles.search_reservations_container} max-width padding`}>
                 <h1>Es momento de encontrar tu reserva</h1>
                 <p>Visualiza cada detalle de tus reservas de Jutti</p>
                 <form className={styles.search_reservations_form}>

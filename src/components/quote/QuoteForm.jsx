@@ -29,7 +29,7 @@ export default function QuoteForm() {
                 name={'quote-form'}
                 method={'post'}
                 action={GOOGLE_SCRIPT}
-                className={styles.quote_form}>
+                className={`${styles.quote_form} max-width`}>
                 <div className={styles.table_two_rows}>
                     <input type="text" name="nombre" placeholder="Primer Nombre" className={styles.simple_input} />
                     <input type="text" name="apellido" placeholder="Primer apellido" className={styles.simple_input} />
