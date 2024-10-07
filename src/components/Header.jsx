@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "@/components/Header.module.css";
 import whatsappIcon from "../../public/assets/logo_whatsapp.svg";
 import whatsappIconW from "../../public/assets/wa_icon_white.svg";
-import mainLogo from "../../public/assets/Jutti_logo.svg";
+import mainLogo from "../../public/assets/jutti_logo.svg";
 
 import hamburger from "../../public/assets/icon_hamburger_menu.svg"
 import close from "../../public/assets/icon_close.svg"
