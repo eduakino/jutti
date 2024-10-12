@@ -13,7 +13,7 @@ export default function Footer() {
             <div className={styles.main_footer_container}>
                 <ul className={styles.main_footer_links}>
                     <li className="link">Jutti, 2024</li>
-                    <li className="link"><a href="#">Términos y condiciones</a></li>
+                    <li className="link no-action">Términos y condiciones</li>
                     <li className="link"><a href="/team">Equipo</a></li>
                     <li className="link">God First</li>
                 </ul>

@@ -45,11 +45,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 100px;
     position: relative;
 }
 
 .blog_tabs__radio { display: none; }
+.firstLabel { margin-left: 100px; }
 
 .blog_tabs__label {
     padding: 14px 24px;

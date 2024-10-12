@@ -127,6 +127,7 @@ export default function QuoteForm() {
                 <div className={styles.table_three_rows}>
                     <select name="adultos" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
                         <option value=" ">Adultos</option>
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -136,6 +137,7 @@ export default function QuoteForm() {
                     </select>
                     <select name="ninos" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
                         <option value=" ">Niños (2-17)</option>
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -145,6 +147,7 @@ export default function QuoteForm() {
                     </select>
                     <select name="bebes" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
                         <option value=" ">Bebés (0-1)</option>
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -156,12 +159,14 @@ export default function QuoteForm() {
                 <div className={styles.table_two_rows}>
                     <select name="equipaje-mano" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
                         <option value=" ">Equipaje de mano</option>
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
                     <select name="equipaje" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
                         <option value=" ">Equipaje en bodega</option>
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

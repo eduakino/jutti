@@ -30,7 +30,7 @@ export default function Blogs() {
                         checked={selectedRadio === 'recientes'}
                         onChange={(e) => setSelectedRadio(e.target.value)}
                         id={'tab1'} />
-                    <label for={'tab1'} className={styles.blog_tabs__label}>Recientes</label>
+                    <label for={'tab1'} className={`${styles.blog_tabs__label} ${styles.firstLabel}`}>Recientes</label>
                     <div className={styles.blog_tabs__content}>
                         <Image src={placeholder} width={240} className={styles.placeholder_img}  />
                         <p>Esto es muy vergonzoso pero aun no tenemos blogs</p>
