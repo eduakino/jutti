@@ -218,11 +218,11 @@ export default function QuoteForm() {
                 </div>
                 <div className={styles.table_two_rows}>
                     <div className={styles.datepickerContainer}>
-                        <input name="fecha-ida" type="date"  className={`${styles.simple_input} ${styles.select_date_input}`} id="checkin-date" min={minCheckin} />
+                        <input name="fecha-ida" type="date"  className={` ${styles.select_date_input}`} id="checkin-date" min={minCheckin} />
                         <label for={'fecha-ida'} className={styles.dateLabel}>Fecha de ida</label>
                     </div>
                     <div className={styles.datepickerContainer}>
-                        <input type="date" name="fecha-vuelta" placeholder="Fecha de vuelta" className={`${styles.simple_input} ${styles.select_date_input}`} id="checkout-date" />
+                        <input type="date" name="fecha-vuelta" placeholder="Fecha de vuelta" className={`${styles.select_date_input}`} id="checkout-date" />
                         <label for={'fecha-vuelta'} className={styles.dateLabel}>Fecha de vuelta</label>
                     </div>
                     

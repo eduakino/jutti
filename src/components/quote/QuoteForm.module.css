@@ -63,8 +63,16 @@
 }
 
 .select_date_input {
-    padding-top: 50px;
-    height: 100px;
+    height: 90px;
+    width: 100%;
+    border: 1px solid #DFDFDF;
+    border-radius: 100px;
+    padding: 50px 50px 24px 50px;
+    resize: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #767676;
 }
 
 .datepickerContainer {
@@ -124,6 +132,19 @@
 }
 
 @media (max-width: 768px) {
+    .select_date_input {
+        height: 60px;
+        border-radius: 100px;
+        padding: 55px 30px 24px 30px;
+        resize: none;
+    }
+
+    .dateLabel {
+        position: absolute;
+        left: 33px;
+        top: 15px;
+    }
+
     .quote_form {
         padding: 0 16px;
         gap: 20px;
