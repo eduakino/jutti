@@ -23,6 +23,11 @@
     gap: 30px;
 }
 
+.logos {
+    width: 81px;
+    height: 81px;
+}
+
 .home_hero_text {
     width: 100%;
     display: flex;
@@ -41,13 +46,10 @@
     color: #8C8C8C;
 }
 
-.logos {
-    width: 81px;
-}
-
 @media (max-width: 768px) {
     .logos {
         width: 58px;
+        height: 58px;
     }
 
     .home_hero_logos {
@@ -56,6 +58,10 @@
 
     .home_hero_container {
         padding: 75px 16px;
+        gap: 40px;
+    }
+
+    .home_hero_text {
         gap: 40px;
     }
 }

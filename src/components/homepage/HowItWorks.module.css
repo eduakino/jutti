@@ -86,9 +86,15 @@
     overflow: hidden;
 }
 
+.howItWorks_last_cards div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+}
+
 .howItWorks_last_cards > h2 {
     width: 100%;
-    padding: 0 60px;
 }
 
 .howItWorks_last_cards_photo {
@@ -142,7 +148,11 @@
 
 @media (max-width: 768px) {
     .howItWorks {
-        padding: 75px 16px;
+        padding: 0px 16px;
+    }
+
+    .howItWorks_container {
+        gap: 75px;
     }
 
     .howItWorks_first_cards {
@@ -167,16 +177,21 @@
     .howItWorks_last_cards {
         max-height: auto;
         flex-direction: column;
+        justify-content: space-between;
         padding-left: 0;
+        min-height: 700px;
+    }
+
+    .howItWorks_last_cards div {
+        min-height: 350px;
+        padding: 40px 20px;
     }
 
     .howItWorks_last_cards > h2 {
         width: 100%;
-        min-height: 350px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px 20px;
     }
 
     .howItWorks_last_cards_photo {
@@ -191,8 +206,9 @@
     .howItWorks_last_cards_on {
         max-height: auto;
         gap: 30px;
-        padding: 40px 20px 80px 20px;
+        padding: 80px 20px;
         background: #222222;
         border-radius: 30px;
+        min-height: 700px;
     }
 }
