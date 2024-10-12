@@ -23,50 +23,6 @@ export default function QuoteForm() {
         })
     }
 
-    var currentDateTime = new Date();
-    var year = currentDateTime.getFullYear();
-    var month = (currentDateTime.getMonth() + 1);
-    var date = (currentDateTime.getDate() + 1);
-
-    if(date > 10) {
-        date = '0' + date
-    }
-
-    if (month > 10) {
-        month = '0' + month
-    }
-
-    var dateTomorrow = year + '-' + month + '-' + date;
-    var checkinElement = document.querySelector("#checkin-date");
-    var checkoutElement = document.querySelector("#checkout-date");
-
-
-        //checkinElement.onchange = function () {
-        //    checkoutElement.setAttribute("min", this.value)
-        //}
-
-
-    const minCheckin = () => {
-        var currentDateTime = new Date();
-        var year = currentDateTime.getFullYear();
-        var month = (currentDateTime.getMonth() + 1);
-        var date = (currentDateTime.getDate() + 1);
-
-        if(date > 10) {
-            date = '0' + date
-        }
-
-        if (month > 10) {
-            month = '0' + month
-        }
-
-        var dateTomorrow = year + '-' + month + '-' + date;
-        checkinElement.setAttribute("min", dateTomorrow);
-
-    }
-
-
-
     return(
         <section className={styles.quote_section}>
             <form
@@ -222,7 +178,7 @@ export default function QuoteForm() {
                         <label for={'fecha-ida'} className={styles.dateLabel}>Fecha de ida</label>
                     </div>
                     <div className={styles.datepickerContainer}>
-                        <input type="date" name="fecha-vuelta" placeholder="Fecha de vuelta" className={`${styles.select_date_input}`} id="checkout-date" />
+                        <input type="date" name="fecha-vuelta" placeholder="Fecha de vuelta" className={`${styles.select_date_input}`} />
                         <label for={'fecha-vuelta'} className={styles.dateLabel}>Fecha de vuelta</label>
                     </div>
                     
