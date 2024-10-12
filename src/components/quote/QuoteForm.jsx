@@ -3,6 +3,7 @@
 import styles from "@/components/quote/QuoteForm.module.css"
 import { redirect } from "next/navigation"
 import { useRouter } from "next/navigation"
+import { useEffect } from "react"
 
 export default function QuoteForm() {
 
@@ -21,6 +22,49 @@ export default function QuoteForm() {
             .catch(err => console.error('Error: ' + err.message))
         })
     }
+
+    var currentDateTime = new Date();
+    var year = currentDateTime.getFullYear();
+    var month = (currentDateTime.getMonth() + 1);
+    var date = (currentDateTime.getDate() + 1);
+
+    if(date > 10) {
+        date = '0' + date
+    }
+
+    if (month > 10) {
+        month = '0' + month
+    }
+
+    var dateTomorrow = year + '-' + month + '-' + date;
+    var checkinElement = document.querySelector("#checkin-date");
+    var checkoutElement = document.querySelector("#checkout-date");
+
+
+        //checkinElement.onchange = function () {
+        //    checkoutElement.setAttribute("min", this.value)
+        //}
+
+
+    const minCheckin = () => {
+        var currentDateTime = new Date();
+        var year = currentDateTime.getFullYear();
+        var month = (currentDateTime.getMonth() + 1);
+        var date = (currentDateTime.getDate() + 1);
+
+        if(date > 10) {
+            date = '0' + date
+        }
+
+        if (month > 10) {
+            month = '0' + month
+        }
+
+        var dateTomorrow = year + '-' + month + '-' + date;
+        checkinElement.setAttribute("min", dateTomorrow);
+
+    }
+
 
 
     return(
@@ -173,8 +217,15 @@ export default function QuoteForm() {
                     </select>
                 </div>
                 <div className={styles.table_two_rows}>
-                    <input type="date" name="fecha-ida" placeholder="Fecha de ida" className={`${styles.simple_input} ${styles.select_date_input}`} />
-                    <input type="date" name="fecha-vuelta" placeholder="Fecha de vuelta" className={`${styles.simple_input} ${styles.select_date_input}`} />
+                    <div className={styles.datepickerContainer}>
+                        <input name="fecha-ida" type="date"  className={`${styles.simple_input} ${styles.select_date_input}`} id="checkin-date" min={minCheckin} />
+                        <label for={'fecha-ida'} className={styles.dateLabel}>Fecha de ida</label>
+                    </div>
+                    <div className={styles.datepickerContainer}>
+                        <input type="date" name="fecha-vuelta" placeholder="Fecha de vuelta" className={`${styles.simple_input} ${styles.select_date_input}`} id="checkout-date" />
+                        <label for={'fecha-vuelta'} className={styles.dateLabel}>Fecha de vuelta</label>
+                    </div>
+                    
                 </div>
                 <div className={styles.table_two_rows}>
                     <select name="equipaje-especial" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>

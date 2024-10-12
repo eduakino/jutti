@@ -62,6 +62,21 @@
     background: url('../../../public/assets/icon_calendar.svg') no-repeat;
 }
 
+.select_date_input {
+    padding-top: 50px;
+    height: 100px;
+}
+
+.datepickerContainer {
+    position: relative;
+}
+
+.dateLabel {
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+
 .area_input {
     width: 100%;
     border: 1px solid #DFDFDF;

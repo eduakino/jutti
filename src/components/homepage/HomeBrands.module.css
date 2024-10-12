@@ -43,7 +43,7 @@
     flex-wrap: nowrap;
     gap: 20px;
     list-style: none;
-    animation: move1 20s linear infinite alternate-reverse;
+    animation: move1 50s linear infinite alternate-reverse;
 }
 .carouselInner2 {
     width: calc(202px * 12);
@@ -52,7 +52,7 @@
     flex-wrap: nowrap;
     gap: 20px;
     list-style: none;
-    animation: move2 20s linear infinite alternate-reverse;
+    animation: move2 50s linear infinite alternate-reverse;
 }
 
 .infiniteCarousel .reverse {animation-direction: reverse;}
