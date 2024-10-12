@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Jutti Travels",
-  description: "Description",
+  title: "Jutti",
+  description: "Creamos tu bitácora personalizada con la ruta que prefieras a un bajo costo, si viajas en avión, tren y piensas tomar la noche alquilando un cuarto en cualquier ciudad.",
 };
 
 export default function RootLayout({ children }) {
