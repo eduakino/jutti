@@ -40,7 +40,7 @@ export default function HowItWorks() {
                     ) : (
                     <div className={styles.howItWorks_last_cards}>
                         <h2>Guía y asistencia total de tu viaje</h2>
-                        <Image style={{width: '100%'}} src={keyboard} className={styles.howItWorks_last_cards_photo} alt={'Keyboard Image'} />
+                        <Image width={441} src={keyboard} className={styles.howItWorks_last_cards_photo} alt={'Keyboard Image'} />
                         <button onClick={() => displayInfoHandlerOn()} ><Image src={plusIcon} /></button>
                     </div>
                     )}
