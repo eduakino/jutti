@@ -1,9 +1,7 @@
 'use client'
 
 import styles from "@/components/quote/QuoteForm.module.css"
-import { redirect } from "next/navigation"
 import { useRouter } from "next/navigation"
-import { useEffect } from "react"
 
 export default function QuoteForm() {
 
@@ -31,16 +29,16 @@ export default function QuoteForm() {
                 action={GOOGLE_SCRIPT}
                 className={`${styles.quote_form} max-width`}>
                 <div className={styles.table_two_rows}>
-                    <input type="text" name="nombre" placeholder="Primer Nombre" className={styles.simple_input} />
-                    <input type="text" name="apellido" placeholder="Primer apellido" className={styles.simple_input} />
+                    <input type="text" name="nombre" placeholder="Primer Nombre" className={styles.simple_input} required />
+                    <input type="text" name="apellido" placeholder="Primer apellido" className={styles.simple_input} required />
                 </div>
                 <div className={styles.table_two_rows}>
-                    <input type="email" name="email" placeholder="Correo Electrónico" className={styles.simple_input} />
-                    <input type="phone" name="telefono" placeholder="Teléfono (Whatsapp)" className={styles.simple_input} />
+                    <input type="email" name="email" placeholder="Correo Electrónico" className={styles.simple_input} required />
+                    <input type="phone" name="telefono" placeholder="Teléfono (Whatsapp)" className={styles.simple_input} required />
                 </div>
                 <div className={styles.table_three_rows}>
-                    <input type="text" name="pais-salida" placeholder="El Salvador" required disabled className={styles.simple_input} />
-                    <select name="pais-destino" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <input type="text" name="pais-salida" placeholder="El Salvador" className={styles.simple_input} disabled required />
+                    <select name="pais-destino" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">País destino</option> 
                         <option value="Albania">Albania</option>
                         <option value="Alemania">Alemania</option>
@@ -118,14 +116,14 @@ export default function QuoteForm() {
                         <option value="Uruguay">Uruguay</option>
                         <option value="Venezuela">Venezuela</option>
                     </select>
-                    <select name="visa" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="visa" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Posees Visa US?</option>
                         <option value="Si">Visa US</option>
                         <option value="No">No poseo Visa</option>
                     </select>
                 </div>
                 <div className={styles.table_three_rows}>
-                    <select name="adultos" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="adultos" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Adultos</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -135,7 +133,7 @@ export default function QuoteForm() {
                         <option value="5">5</option>
                         <option value="5+">Más de 5</option>
                     </select>
-                    <select name="ninos" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="ninos" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Niños (2-17)</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -145,7 +143,7 @@ export default function QuoteForm() {
                         <option value="5">5</option>
                         <option value="5+">Más de 5</option>
                     </select>
-                    <select name="bebes" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="bebes" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Bebés (0-1)</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -157,14 +155,14 @@ export default function QuoteForm() {
                     </select>
                 </div>
                 <div className={styles.table_two_rows}>
-                    <select name="equipaje-mano" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="equipaje-mano" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Equipaje de mano</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <select name="equipaje" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="equipaje" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Equipaje en bodega</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -174,17 +172,17 @@ export default function QuoteForm() {
                 </div>
                 <div className={styles.table_two_rows}>
                     <div className={styles.datepickerContainer}>
-                        <input name="fecha-ida" type="date" className={` ${styles.select_date_input}`} />
+                        <input name="fecha-ida" type="date" className={` ${styles.select_date_input}`} required />
                         <label for={'fecha-ida'} className={styles.dateLabel}>Fecha de ida</label>
                     </div>
                     <div className={styles.datepickerContainer}>
-                        <input type="date" name="fecha-vuelta" className={`${styles.select_date_input}`} />
+                        <input type="date" name="fecha-vuelta" className={`${styles.select_date_input}`} required />
                         <label for={'fecha-vuelta'} className={styles.dateLabel}>Fecha de vuelta</label>
                     </div>
                     
                 </div>
                 <div className={styles.table_two_rows}>
-                    <select name="equipaje-especial" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="equipaje-especial" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Equipaje especial</option>
                         <option value="no">No</option>
                         <option value="Equipo deportivo">Equipos deportivos</option>
@@ -192,7 +190,7 @@ export default function QuoteForm() {
                         <option value="Silla de ruedas">Silla de ruedas</option>
                         <option value="Equipaje grande">Equipaje voluminoso y/o pesado</option>
                     </select>
-                    <select name="estadia" type="text" required className={`${styles.simple_input} ${styles.select_input}`}>
+                    <select name="estadia" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value=" ">Quieres incluir estadía?</option>
                         <option value="Airbnb">Vía Airbnb</option>
                         <option value="Hotet promedio">Hotel promedio</option>
