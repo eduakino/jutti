@@ -1,13 +1,10 @@
 'use client'
 
 import styles from "@/components/quote/QuoteForm.module.css"
-import { useRouter } from "next/navigation"
 
 export default function QuoteForm() {
 
     const GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbzX_Knhwz91gIq4GyVot7UxA08KzzXqUEahrbjPeVX77AdyC2W5SLuq2JoNHXi0z8m58A/exec"
-
-    const router = useRouter()
 
     const formRedirect = () => {
         const form = document.forms['quote-form']
@@ -15,8 +12,8 @@ export default function QuoteForm() {
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(GOOGLE_SCRIPT, {method: 'POST', body: new FormData(form)})
+            .then(() => {window.location.href= "/quote/success"})
             .then(res => console.log(res))
-            .then(() => {window.location.reload()})
             .catch(err => console.error('Error: ' + err.message))
         })
     }
@@ -26,7 +23,7 @@ export default function QuoteForm() {
             <form
                 name={'quote-form'}
                 method={'post'}
-                action={GOOGLE_SCRIPT}
+                action={formRedirect}
                 className={`${styles.quote_form} max-width`}>
                 <div className={styles.table_two_rows}>
                     <input type="text" name="nombre" placeholder="Primer Nombre" className={styles.simple_input} required />
