@@ -7,7 +7,7 @@ import threadsIcon from "../../public/assets/logo_threads.svg";
 import facebookIcon from "../../public/assets/logo_facebook.svg";
 import linkedinIcon from "../../public/assets/logo_linkedin.svg";
 
-export default function Footer() {
+export default function MainFooter() {
     return(
         <footer className={styles.main_footer}>
             <div className={styles.main_footer_container}>
