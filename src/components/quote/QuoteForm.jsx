@@ -36,7 +36,7 @@ export default function QuoteForm() {
                 <div className={styles.table_three_rows}>
                     <input type="text" name="pais-salida" placeholder="El Salvador" className={styles.simple_input} disabled required />
                     <select name="pais-destino" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">País destino</option> 
+                        <option value="">País destino</option> 
                         <option value="Albania">Albania</option>
                         <option value="Alemania">Alemania</option>
                         <option value="Andorra">Andorra</option>
@@ -114,14 +114,14 @@ export default function QuoteForm() {
                         <option value="Venezuela">Venezuela</option>
                     </select>
                     <select name="visa" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Posees Visa US?</option>
+                        <option value="" disabled>Posees Visa US?</option>
                         <option value="Si">Visa US</option>
                         <option value="No">No poseo Visa</option>
                     </select>
                 </div>
                 <div className={styles.table_three_rows}>
                     <select name="adultos" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Adultos</option>
+                        <option value="">Adultos</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -131,7 +131,7 @@ export default function QuoteForm() {
                         <option value="5+">Más de 5</option>
                     </select>
                     <select name="ninos" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Niños (2-17)</option>
+                        <option value="">Niños (2-17)</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -141,7 +141,7 @@ export default function QuoteForm() {
                         <option value="5+">Más de 5</option>
                     </select>
                     <select name="bebes" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Bebés (0-1)</option>
+                        <option value="">Bebés (0-1)</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -153,14 +153,14 @@ export default function QuoteForm() {
                 </div>
                 <div className={styles.table_two_rows}>
                     <select name="equipaje-mano" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Equipaje de mano</option>
+                        <option value="">Equipaje de mano</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
                     <select name="equipaje" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Equipaje en bodega</option>
+                        <option value="">Equipaje en bodega</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -180,7 +180,7 @@ export default function QuoteForm() {
                 </div>
                 <div className={styles.table_two_rows}>
                     <select name="equipaje-especial" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Equipaje especial</option>
+                        <option value="">Equipaje especial</option>
                         <option value="no">No</option>
                         <option value="Equipo deportivo">Equipos deportivos</option>
                         <option value="Instrumentos musicales">Instrumentos musicales</option>
@@ -188,7 +188,7 @@ export default function QuoteForm() {
                         <option value="Equipaje grande">Equipaje voluminoso y/o pesado</option>
                     </select>
                     <select name="estadia" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
-                        <option value=" ">Quieres incluir estadía?</option>
+                        <option value="">Quieres incluir estadía?</option>
                         <option value="Airbnb">Vía Airbnb</option>
                         <option value="Hotet promedio">Hotel promedio</option>
                         <option value="Hotel de lujo">Hotel de lujo</option>
