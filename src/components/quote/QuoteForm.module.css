@@ -132,6 +132,25 @@
     cursor: pointer;
 }
 
+.submit_btn_loading {
+    align-self: flex-start;
+    background: #FF5301;
+    padding: 14px 30px 0 30px;
+    border-radius: 100px;
+    margin-bottom: 150px;
+    cursor: pointer;
+    min-width: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.airplane {
+    width: 48px;
+    height: fit-content;
+    aspect-ratio: 1/1;
+}
+
 @media (max-width: 768px) {
     .select_date_input {
         height: 60px;

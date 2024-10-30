@@ -6,6 +6,7 @@ export default function QuoteForm() {
 
     const GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbzX_Knhwz91gIq4GyVot7UxA08KzzXqUEahrbjPeVX77AdyC2W5SLuq2JoNHXi0z8m58A/exec"
 
+
     const formRedirect = () => {
         const form = document.forms['quote-form']
 
@@ -14,6 +15,7 @@ export default function QuoteForm() {
             fetch(GOOGLE_SCRIPT, {method: 'POST', body: new FormData(form)})
             .then(() => {window.location.href= "/quote/success"})
             .then(res => console.log(res))
+            .then(setIsLoading(false))
             .catch(err => console.error('Error: ' + err.message))
         })
     }
@@ -22,8 +24,8 @@ export default function QuoteForm() {
         <section className={styles.quote_section}>
             <form
                 name={'quote-form'}
-                method={'post'}
-                action={formRedirect}
+                //method={'post'}
+                //action={formRedirect}
                 className={`${styles.quote_form} max-width`}>
                 <div className={styles.table_two_rows}>
                     <input type="text" name="nombre" placeholder="Primer Nombre" className={styles.simple_input} required />
@@ -209,7 +211,10 @@ export default function QuoteForm() {
                     <span>Al enviar tu cotización, automáticamente estás aceptando nuestros <a href="#" target="_blank">Términos y condiciones</a></span>
                 </div>
 
-                <input type={'submit'} value={'Solicitar cotización'} className={styles.submit_btn} onClick={() => formRedirect()} />
+                <input
+                    type={'submit'}
+                    value={'Solicitar cotización'}
+                    className={styles.submit_btn} onClick={() => formRedirect()} />
             </form>
         </section>
     )
