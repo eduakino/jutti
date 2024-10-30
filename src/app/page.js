@@ -9,6 +9,7 @@ import americanAirlines from "../../public/assets/logo_american_airlines.svg";
 import copaAirlines from "../../public/assets/logo_copa_airlines.svg";
 import lufthansa from "../../public/assets/logo_bird_airlines.svg";
 import iberia from "../../public/assets/logo_iberia_airlines.svg";
+import WAFixed from "@/components/homepage/WAFixed";
 
 const hero_logos = [
   {
@@ -40,6 +41,7 @@ export default function Home() {
       <HomeBrands />
       <FAQ />
       <HomeCTA />
+      <WAFixed />
     </main>
   );
 }
