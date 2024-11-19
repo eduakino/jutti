@@ -192,7 +192,7 @@ export default function QuoteForm() {
                     <select name="estadia" type="text" className={`${styles.simple_input} ${styles.select_input}`} required>
                         <option value="">Quieres incluir estadía?</option>
                         <option value="Airbnb">Vía Airbnb</option>
-                        <option value="Hotet promedio">Hotel promedio</option>
+                        <option value="Hotel promedio">Hotel promedio</option>
                         <option value="Hotel de lujo">Hotel de lujo</option>
                         <option value="No">No incluir en la cotización</option>
                     </select>
